@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Mokituzzaman Mk">
+	<title>User</title>
+
+	<!--Stylesheet-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="data:image/png;base64,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">
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
+		<div class="container">	
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" >
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a class="navbar-brand" href="index.html" title="Home">Blogen</a>
+			<div class="collapse navbar-collapse"id="navbarNav">
+				<ul class="navbar-nav ">
+					<li class="nav-item px-2">
+						<a class="nav-link" href="index.html">Dashboard</a>
+					</li>
+					<li class="nav-item px-2">
+						<a class="nav-link" href="post.html">Post</a>
+					</li>
+					<li class="nav-item  px-2">
+						<a class="nav-link" href="categories.html">Categories</a>
+					</li>
+					<li class="nav-item active px-2">
+						<a class="nav-link" href="user.html">User</a>
+					</li>
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item dropdown mr-3">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user"></i> Welcome Brand</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="profile.html"><i class="fa fa-user-circle"></i>
+								Profile</a>
+							<a class="dropdown-item" href="setting.html"><i class="fa fa-gear"></i>
+								Settings</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="login.html"><i class="fa fa-user-times"></i> Logout</a>
+					</li>
+				</ul>
+			</div>
+		</div>	
+	</nav>	
+	<!-- Header -->
+	<header class="py-2 bg-warning text-white" id="main-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h1><i class="fa fa-user"></i> User</h1>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Actions -->	
+	<section class="bg-light py-4 mb-4" id="action">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 ml-auto">
+					<div class="input-group">
+						<input class="form-control" type="text"  placeholder="Search">
+							<div class="input-group-btn">
+								<button class="btn btn-warning text-white" data-toggle="modal" data-target="#addusermodal">Search</button>
+							</div>		
+					</div>	
+				</div>
+			</div>
+		</div>	
+	</section>	
+	<!--User  -->
+	<section id="post">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="card">
+						<div class="card-header">
+							<h4>Latest User</h4>
+						</div>	
+							<table class="table table-striped">
+								<thead class="thead-invarse bg-dark text-white">
+									<tr>
+										<th>User Name</th>
+										<th>Email</th>
+										<th>SignUp Date</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sayed Malik</td>
+										<td>sayedmalik@hotmail</td>
+										<td>Dec 12, 2001</td>
+									</tr>
+									<tr>
+										<td>Tom Crouse</td>
+										<td>tomcr@email.com</td>
+										<td>july 17, 2007</td>
+										
+									</tr>
+									<tr>
+										<td>Abeda Sultana</td>
+										<td>abeda1200@gmail.com</td>
+										<td>March 10, 2017</td>
+										
+									</tr>	
+									<tr>
+										<td>Jon Snow</td>
+										<td>snow1999@mmail.com</td>
+										<td>july, 01 1999</td>
+										
+									</tr>	
+									<tr>
+										
+										<td>Makshuda knm</td>
+										<td>knm222222@outlook.com</td>
+										<td>Feb 13, 2013</td>
+										
+									</tr>
+									<tr>
+										<td>Steav Jobs</td>
+										<td>www.apple.com</td>
+										<td>Jan 1, 1987</td>
+										
+									</tr>
+								</tbody>
+							</table>	
+							<!-- Pagination -->
+							<div class="pagination">
+								<div class="container">
+									<nav class="ml-5">
+										<ul class="pagination">
+											<li class="page-item disabled"><a href="#" class="page-link">Previous</a></li>
+											<li class="page-item active"><a href="#" class="page-link">1</a></li>
+											<li class="page-item"><a href="#" class="page-link">2</a></li>
+											<li class="page-item"><a href="#" class="page-link">3</a></li>
+											<li class="page-item"><a href="#" class="page-link">4</a></li>
+											<li class="page-item"><a href="#" class="page-link">5</a></li>
+											<li class="page-item"><a href="#" class="page-link">Next</a></li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+					</div>
+				</div>  
+				
+			</div>
+		</div>
+	</section>
+	 <!-- Main-Footer -->
+	<footer class="bg-dark p-5 mt-5 text-center text-white" id="main-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<p class="lead">Copyright &copy; 2018 Blogen</p>
+				</div>
+			</div>
+		</div>	
+	</footer>
+	<!--User Modal-->
+	<div class="modal fade" id="addusermodal">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header bg-info text-white">
+					<h5 class="modal-title">Signup Now</h5>
+					<button class="close" data-dismiss="modal"><span>&times;</span></button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="name">User Name</label>
+							<input class="form-control"type="text">
+						</div>
+						<div class="form-group">
+							<label for="email">Email</label>
+							<input class="form-control"type="email">
+						</div>
+						<div class="form-group">
+							<label for="Password">Password</label>
+							<input class="form-control"type="Password">
+						</div>
+						<div class="form-group">
+							<label for="Password">Confirm Password</label>
+							<input class="form-control"type="Password">
+						</div>
+						
+					</form>
+					<div class="modal-footer">
+						<button class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button class="btn btn-info" data-dismiss="modal">Login..</button>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="https://cdn.ckeditor.com/4.9.0/standard/ckeditor.js"></script>
+	
+  <script>
+    CKEDITOR.replace( 'editor1' );
+  </script>
+	
+</body>
+</html>
